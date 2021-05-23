@@ -21,6 +21,14 @@
             android:id="@+id/define_vg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:visibility="visible"/>
+            android:visibility="gone"/>
+
+        <com.wolfsea.defineviewgroupdemo.RoundRectProgressBar
+            android:id="@+id/round_rect_pb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginEnd="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_10"/>
     </RelativeLayout>
 </layout>

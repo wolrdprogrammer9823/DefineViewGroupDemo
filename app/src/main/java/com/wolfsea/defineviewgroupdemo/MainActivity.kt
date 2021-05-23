@@ -18,6 +18,8 @@ class MainActivity : AppCompatActivity() {
         dataBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
         define_vg.itemCountPerRow = 2
         define_vg.setDataSourceByNewView(createDataSet(12))
+
+        dataBinding.roundRectPb.updateProgress(45F)
     }
 
     override fun onDestroy() {

@@ -1,4 +1,5 @@
 package com.wolfsea.defineviewgroupdemo
+import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.*
 import android.util.AttributeSet
@@ -64,18 +65,6 @@ class RoundRectProgressBar(context: Context, attributeSet: AttributeSet) : View(
         }
 
         pieces = progressWidth / TOTAL_PIECES
-
-        progressGradientDrawable = LinearGradient(
-            0F,
-            0F,
-            progressWidth.toFloat(),
-            progressHeight.toFloat(),
-            intArrayOf(Color.BLUE, Color.GREEN, Color.RED),
-            null,
-            Shader.TileMode.CLAMP
-        )
-
-        progressPaint.shader = progressGradientDrawable
     }
 
     override fun onDraw(canvas: Canvas?) {
@@ -117,6 +106,18 @@ class RoundRectProgressBar(context: Context, attributeSet: AttributeSet) : View(
         backgroundRectF = RectF()
         progressRectF = RectF()
         middleProgressRectF = Rect()
+
+        progressGradientDrawable = LinearGradient(
+            0F,
+            0F,
+            progressWidth.toFloat(),
+            progressHeight.toFloat(),
+            intArrayOf(Color.BLUE, Color.GREEN, Color.RED),
+            null,
+            Shader.TileMode.CLAMP
+        )
+
+        progressPaint.shader = progressGradientDrawable
     }
 
     companion object {
