@@ -4,4 +4,11 @@
         <attr name="lineSpace" format="dimension" />
         <attr name="maxLine" format="integer" />
     </declare-styleable>
+
+    <declare-styleable name="RoundRectProgressBar">
+        <attr name="roundBarWidth" format="dimension|integer"/>
+        <attr name="roundBarHeight" format="dimension|integer"/>
+        <attr name="roundBarRx" format="dimension|float"/>
+        <attr name="roundBarRy" format="dimension|float"/>
+    </declare-styleable>
 </resources>
